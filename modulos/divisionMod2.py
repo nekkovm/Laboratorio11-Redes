@@ -31,4 +31,14 @@ def mod2div(divident:bitarray, divisor:bitarray)-> bitarray:
     else:
         tmp = xor('0'*div_longitud, tmp)
     checkword = tmp
+    #comprobacion(bitarray(divident),bitarray(checkword),bitarray(divisor))
     return bitarray(checkword)
+
+#TEST BENCH
+"""
+if __name__=='__main__':
+    rem = mod2div(bitarray('100010110101101001110'),bitarray('1001'))
+    check = mod2div(bitarray('100010110101101001110')+rem,bitarray('1001'))
+    print(f"rem:{rem}")
+    print(f"check: {check}")
+"""
